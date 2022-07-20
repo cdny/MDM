@@ -1,0 +1,5 @@
+CREATE TABLE dbo.PhoneType (
+PhoneTypeID INT NOT NULL  IDENTITY(1,1),
+PhoneType VARCHAR(50) NOT NULL
+CONSTRAINT phone_type_id PRIMARY KEY (PhoneTypeID)
+);

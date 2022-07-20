@@ -1,0 +1,7 @@
+CREATE TABLE dbo.Region (
+RegionID INT NOT NULL  IDENTITY(1,1),
+RegionName VARCHAR(150) NOT NULL,
+fkOrgID INT NULL
+CONSTRAINT region_id PRIMARY KEY (RegionID),
+CONSTRAINT region_org_id FOREIGN KEY (fkOrgID) REFERENCES dbo.org(OrgID)
+);
